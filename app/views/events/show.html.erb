@@ -1,4 +1,4 @@
-<% if @event.date_time < Time.now %>
+<% if @event.date < Time.now %>
   <div class="alert alert-secondary" role="alert">Registration for this event is now closed</div>
 <% end %>
 
@@ -14,7 +14,7 @@
     <% elsif @event.attendees.include?(current_user) %>
       <%= link_to 'Cancel RSVP', cancel_rsvp_event_path, class: "btn btn-outline-secondary" %>
     <% else %>
-      <%= link_to 'RSVP', rsvp_event_path, class: "btn btn-primary" unless @event.date_time < Time.now %>
+      <%= link_to 'RSVP', rsvp_event_path, class: "btn btn-primary" unless @event.date < Time.now %>
     <% end %>
   </div>
 </div>
@@ -39,7 +39,7 @@
             </p>
             <p class="text-muted">
               <i class="far fa-calendar-alt text-dark fa-lg mr-1"></i>
-              <%= @event.date_time.strftime("%B %-d, %Y at %l:%M %p") %>
+              <%= @event.date.strftime("%B %-d, %Y at %l:%M %p") %>
             </p>
             <p class="text-muted">
               <i class="fas fa-map-marker-alt text-dark fa-lg mr-1"></i> <%= @event.location %>
