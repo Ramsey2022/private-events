@@ -16,7 +16,7 @@ Password: password
 
 ## About
 
-Private-events was created based on The Odin Project's advanced forms project for building a [private-event](https://www.theodinproject.com/lessons/ruby-on-rails-private-events) site like Eventbrite. This project is fairly simple. A user can create events, attend many events. An event can be attended by many users. Events take place at a specific date, time, and location. 
+Private-events was created based on The Odin Project's advanced forms project for building a [private-event](https://www.theodinproject.com/lessons/ruby-on-rails-private-events) site like [EventBrite](https://www.eventbrite.com/). This project is fairly simple. A user can create events, attend many events. An event can be attended by many users. Events take place at a specific date, time, and location. 
 
 The main focus was Active Record and more complex associations. In addition, I learned how to use scopes and foreign keys. I also dabbled in Bootstrap for this project, but found vanilla CSS more enjoyable. Overall, it was good experience with complexity.
 
